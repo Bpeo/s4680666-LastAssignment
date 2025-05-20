@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="0dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_background"
+        android:padding="24dp">
+
+        <!-- Primary Text (Common Name,  etc.) -->
+        <TextView
+            android:id="@+id/primaryText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/statusBadge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Swiss Cheese Plant" />
+
+        <!-- Secondary Text (Scientific Name, etc.) -->
+        <TextView
+            android:id="@+id/secondaryText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#757575"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@id/statusBadge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/primaryText"
+            tools:text="Monstera deliciosa" />
+
+        <!-- Status Badge (Care Level, etc.) -->
+        <TextView
+            android:id="@+id/statusBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/badge_background"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:textColor="#2E7D32"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Easy" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
