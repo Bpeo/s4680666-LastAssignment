@@ -1,7 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Base application theme for dark mode -->
     <style name="Base.Theme.AssignmentLast" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!-- Primary and secondary colors for dark mode -->
+        <item name="colorPrimary">@color/colorPrimary</item>               <!-- Blue -->
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item> <!-- Darker Blue -->
+        <item name="colorSecondary">@color/colorSecondary</item>           <!-- Teal -->
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Text and background colors -->
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textSecondary</item>
+        <item name="android:colorBackground">@color/background</item>
     </style>
 </resources>
